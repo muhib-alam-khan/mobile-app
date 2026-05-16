@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneZone | Modern Mobile Shop</title>
+    <!-- Tailwind CSS for modern, fast styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-gray-950/95 backdrop-blur-xl border-b border-gray-800 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="text-xl font-black tracking-wider text-cyan-400 flex items-center gap-2">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>PHONE<span class="text-white">ZONE</span></span>
+                    </span>
+                </div>
+                <button id="mobileNavButton" aria-expanded="false" aria-label="Open navigation menu"
+                    class="md:hidden inline-flex items-center justify-center p-2 rounded-xl text-gray-200 hover:text-white hover:bg-gray-800 transition">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition">Home</a>
+                        <a href="#phones"
+                            class="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition">Smartphones</a>
+                        <a href="#accessories"
+                            class="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition">Accessories</a>
+                        <a href="#contact"
+                            class="hover:text-cyan-400 px-3 py-2 text-sm font-medium transition">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/1234567890" target="_blank"
+                        class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 transition transform hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Chat Now
+                    </a>
+                </div>
+            </div>
+            <div id="mobileNav"
+                class="md:hidden hidden mt-2 rounded-3xl border border-gray-800 bg-gray-900/95 p-4 shadow-xl">
+                <div class="space-y-2">
+                    <a href="#home"
+                        class="block rounded-xl px-4 py-3 text-sm text-gray-100 hover:bg-gray-800 hover:text-cyan-400 transition">Home</a>
+                    <a href="#phones"
+                        class="block rounded-xl px-4 py-3 text-sm text-gray-100 hover:bg-gray-800 hover:text-cyan-400 transition">Smartphones</a>
+                    <a href="#accessories"
+                        class="block rounded-xl px-4 py-3 text-sm text-gray-100 hover:bg-gray-800 hover:text-cyan-400 transition">Accessories</a>
+                    <a href="#contact"
+                        class="block rounded-xl px-4 py-3 text-sm text-gray-100 hover:bg-gray-800 hover:text-cyan-400 transition">Contact</a>
+                    <a href="https://wa.me/1234567890" target="_blank"
+                        class="block rounded-xl bg-green-500 px-4 py-3 text-sm font-bold text-white text-center hover:bg-green-600 transition">Chat
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home"
+        class="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(14,165,233,0.18),_transparent_20%),_radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.10),_transparent_28%)] bg-gray-900 py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="max-w-xl">
+                <span class="text-cyan-400 font-semibold tracking-widest uppercase text-sm">Latest Arrivals 2026</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mt-4 leading-tight">
+                    Upgrade Your <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Digital
+                        Life</span> Today.
+                </h1>
+                <p class="mt-5 text-gray-400 text-base sm:text-lg leading-8">
+                    Discover genuine smartphones and premium accessories with official warranties at the best prices in
+                    town. Same-day delivery available.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row sm:flex-wrap gap-4">
+                    <a href="#phones"
+                        class="inline-flex items-center justify-center bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold px-8 py-3 rounded-full transition shadow-lg shadow-cyan-500/20">Browse
+                        Catalog</a>
+                    <a href="#contact"
+                        class="inline-flex items-center justify-center border border-gray-700 hover:border-cyan-400 text-white font-bold px-8 py-3 rounded-full transition">Visit
+                        Shop</a>
+                </div>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="rounded-3xl bg-white/5 border border-gray-800 p-4 text-center">
+                        <p class="text-sm text-gray-400">Fast Delivery</p>
+                        <p class="mt-2 font-bold text-white">Same-day shipping</p>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 border border-gray-800 p-4 text-center">
+                        <p class="text-sm text-gray-400">Verified Stock</p>
+                        <p class="mt-2 font-bold text-white">Authentic brands</p>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 border border-gray-800 p-4 text-center">
+                        <p class="text-sm text-gray-400">Support</p>
+                        <p class="mt-2 font-bold text-white">Live WhatsApp help</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex justify-center items-center">
+                <div class="absolute -top-6 right-0 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80"
+                    alt="Latest Smartphone"
+                    class="rounded-[2rem] shadow-2xl border border-gray-800 w-full max-w-xl h-auto object-cover transform -rotate-3 hover:rotate-0 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- SMARTPHONES CATALOG -->
+    <section id="phones" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold">Featured <span class="text-cyan-400">Smartphones</span></h2>
+            <p class="text-gray-400 mt-2">100% authentic devices with official brand warranty</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Phone Card 1 -->
+            <div
+                class="bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 hover:border-cyan-500 transition group flex flex-col shadow-xl">
+                <div class="relative overflow-hidden h-64 bg-gray-950 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=400&q=80"
+                        alt="NextGen Pro Max"
+                        class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                    <span
+                        class="absolute top-3 right-3 bg-cyan-500 text-gray-900 text-xs font-black px-2 py-1 rounded">NEW</span>
+                </div>
+                <div class="p-6 flex flex-col flex-1 justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold item-title">NextGen Pro Max</h3>
+                        <p class="text-sm text-gray-400 mt-3">256GB Storage • 12GB RAM • Titanium</p>
+                    </div>
+                    <div class="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                        <span class="text-2xl font-black text-cyan-400 item-price">$1,099</span>
+                        <button onclick="openInquiryModal('NextGen Pro Max', '$1,099')"
+                            class="w-full sm:w-auto bg-gray-700 hover:bg-green-500 text-white px-4 py-3 rounded-2xl text-sm font-bold transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp"></i> Buy
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Card 2 -->
+            <div
+                class="bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 hover:border-cyan-500 transition group flex flex-col shadow-xl">
+                <div class="relative overflow-hidden h-64 bg-gray-950 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1565630916779-e303be97b6f5?auto=format&fit=crop&w=400&q=80"
+                        alt="Aura Premium Lite"
+                        class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="p-6 flex flex-col flex-1 justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold item-title">Aura Premium Lite</h3>
+                        <p class="text-sm text-gray-400 mt-3">128GB Storage • 8GB RAM • Sleek Black</p>
+                    </div>
+                    <div class="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                        <span class="text-2xl font-black text-cyan-400 item-price">$599</span>
+                        <button onclick="openInquiryModal('Aura Premium Lite', '$599')"
+                            class="w-full sm:w-auto bg-gray-700 hover:bg-green-500 text-white px-4 py-3 rounded-2xl text-sm font-bold transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp"></i> Buy
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Card 3 -->
+            <div
+                class="bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 hover:border-cyan-500 transition group flex flex-col shadow-xl">
+                <div class="relative overflow-hidden h-64 bg-gray-950 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1573148195900-7845dcb9b127?auto=format&fit=crop&w=400&q=80"
+                        alt="Volt Eco Slim"
+                        class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                    <span
+                        class="absolute top-3 right-3 bg-yellow-500 text-gray-900 text-xs font-black px-2 py-1 rounded">HOT
+                        DEAL</span>
+                </div>
+                <div class="p-6 flex flex-col flex-1 justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold item-title">Volt Eco Slim</h3>
+                        <p class="text-sm text-gray-400 mt-3">128GB Storage • 6GB RAM • Mint Green</p>
+                    </div>
+                    <div class="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                        <span class="text-2xl font-black text-cyan-400 item-price">$299</span>
+                        <button onclick="openInquiryModal('Volt Eco Slim', '$299')"
+                            class="w-full sm:w-auto bg-gray-700 hover:bg-green-500 text-white px-4 py-3 rounded-2xl text-sm font-bold transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp"></i> Buy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESSORIES SECTION -->
+    <section id="accessories" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold">Must-Have <span class="text-cyan-400">Accessories</span></h2>
+                <p class="text-gray-400 mt-2">Gear up your smartphone with top tier add-ons</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+                <!-- Accessory 1 -->
+                <div class="bg-gray-800 p-4 rounded-3xl border border-gray-700 text-center cursor-pointer hover:border-cyan-500 transition"
+                    onclick="openInquiryModal('Wireless ANC Earbuds', '$89')">
+                    <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=200&q=80"
+                        alt="Audio" class="w-full h-40 object-cover rounded-3xl mb-4">
+                    <h4 class="font-bold text-sm sm:text-base">Wireless ANC Earbuds</h4>
+                    <span class="text-cyan-400 font-bold block mt-1">$89</span>
+                </div>
+                <!-- Accessory 2 -->
+                <div class="bg-gray-800 p-4 rounded-3xl border border-gray-700 text-center cursor-pointer hover:border-cyan-500 transition"
+                    onclick="openInquiryModal('65W GaN Fast Charger', '$39')">
+                    <img src="https://images.unsplash.com/photo-1622445262465-2481c4574875?auto=format&fit=crop&w=200&q=80"
+                        alt="Charger" class="w-full h-40 object-cover rounded-3xl mb-4">
+                    <h4 class="font-bold text-sm sm:text-base">65W GaN Fast Charger</h4>
+                    <span class="text-cyan-400 font-bold block mt-1">$39</span>
+                </div>
+                <!-- Accessory 3 -->
+                <div class="bg-gray-800 p-4 rounded-3xl border border-gray-700 text-center cursor-pointer hover:border-cyan-500 transition"
+                    onclick="openInquiryModal('Shockproof Armor Case', '$19')">
+                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=200&q=80"
+                        alt="Cases" class="w-full h-40 object-cover rounded-3xl mb-4">
+                    <h4 class="font-bold text-sm sm:text-base">Shockproof Armor Case</h4>
+                    <span class="text-cyan-400 font-bold block mt-1">$19</span>
+                </div>
+                <!-- Accessory 4 -->
+                <div class="bg-gray-800 p-4 rounded-3xl border border-gray-700 text-center cursor-pointer hover:border-cyan-500 transition"
+                    onclick="openInquiryModal('10,000mAh Power Bank', '$29')">
+                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=200&q=80"
+                        alt="Powerbank" class="w-full h-40 object-cover rounded-3xl mb-4">
+                    <h4 class="font-bold text-sm sm:text-base">10,000mAh Power Bank</h4>
+                    <span class="text-cyan-400 font-bold block mt-1">$29</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & LOCATION -->
+    <section id="contact" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold text-white">Visit Our <span class="text-cyan-400">Shop</span></h2>
+                <p class="text-gray-400 mt-4">Drop by to view devices in person, get live product demos, or swap out
+                    your old device instantly.</p>
+                <div class="mt-8 space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-cyan-400 text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Address</h5>
+                            <p class="text-sm text-gray-400">123 Tech Avenue, Electronic District</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-cyan-400 text-xl">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Store Hours</h5>
+                            <p class="text-sm text-gray-400">Mon - Sat: 10:00 AM - 09:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full h-72 lg:h-auto min-h-[300px] bg-gray-800 rounded-xl overflow-hidden border border-gray-700 relative">
+                <iframe class="absolute inset-0 w-full h-full filter grayscale invert opacity-80"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m10!1m3!1d10000!2d0!3d0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMDDCsDAwJzAwLjAiTiAwwrAwMCcwMC4wIkU!5e0!3m2!1sen!2s!4v1234567890"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT POP-UP INQUIRY MODAL -->
+    <div id="inquiryModal"
+        class="fixed inset-0 z-50 invisible flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 transition-all duration-300">
+        <div class="bg-gray-800 border border-gray-700 rounded-2xl max-w-md w-full p-6 relative shadow-2xl transform scale-95 transition-transform duration-300"
+            id="modalContainer">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-2xl font-black text-white mb-2">Confirm Inquiry</h3>
+            <p class="text-gray-400 text-sm mb-6">You are inquiring about the following item. Tap below to finish
+                ordering on WhatsApp.</p>
+
+            <div class="bg-gray-900 p-4 rounded-xl border border-gray-700 mb-6 flex justify-between items-center">
+                <div>
+                    <h4 id="modalItemName" class="font-bold text-white text-lg">Product Name</h4>
+                    <p class="text-xs text-cyan-400 tracking-wider font-semibold uppercase mt-1">Available in Stock</p>
+                </div>
+                <span id="modalItemPrice" class="text-xl font-black text-green-400">$0.00</span>
+            </div>
+
+            <div class="flex gap-3">
+                <button onclick="closeModal()"
+                    class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-xl transition">Cancel</button>
+                <a id="modalWhatsAppBtn" href="#" target="_blank"
+                    class="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Send Order
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-8 text-center text-sm text-gray-500">
+        <p>&copy; 2026 PhoneZone. All Rights Reserved.</p>
+    </footer>
+
+    <!-- STICKY FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/1234567890?text=Hi!%20I'm%20visiting%20your%20website%20and%20have%20a%20question."
+        target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 transition transform hover:scale-110 active:scale-95 animate-bounce">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JAVASCRIPT CODE -->
+    <script>
+        // Business configurations
+        const WHATSAPP_NUMBER = "1234567890"; // ⚠️ REPLACE WITH YOUR REAL NUMBER (With Country Code, No spaces)
+
+        const modal = document.getElementById('inquiryModal');
+        const modalContainer = document.getElementById('modalContainer');
+        const itemNameText = document.getElementById('modalItemName');
+        const itemPriceText = document.getElementById('modalItemPrice');
+        const whatsAppBtn = document.getElementById('modalWhatsAppBtn');
+        const mobileNavButton = document.getElementById('mobileNavButton');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (mobileNavButton && mobileNav) {
+            mobileNavButton.addEventListener('click', () => {
+                const expanded = mobileNavButton.getAttribute('aria-expanded') === 'true';
+                mobileNavButton.setAttribute('aria-expanded', String(!expanded));
+                mobileNav.classList.toggle('hidden');
+                const icon = mobileNavButton.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-xmark');
+                }
+            });
+
+            mobileNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => mobileNav.classList.add('hidden'));
+            });
+        }
+
+        // Function to launch the pop-up modal and configure dynamic links
+        function openInquiryModal(name, price) {
+            itemNameText.innerText = name;
+            itemPriceText.innerText = price;
+
+            // Generate customized message for WhatsApp
+            const baseMessage = `Hi PhoneZone! I want to buy/inquire about the *${name}* priced at *${price}*. Is this item currently available at your storefront?`;
+            const encodedMessage = encodeURIComponent(baseMessage);
+
+            // Assign the constructed custom text link to the button
+            whatsAppBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+            // Show modal with animation smoothly
+            modal.classList.remove('invisible');
+            modal.classList.add('opacity-100');
+            modalContainer.classList.remove('scale-95');
+            modalContainer.classList.add('scale-100');
+        }
+
+        // Close the modal screen
+        function closeModal() {
+            modal.classList.add('invisible');
+            modalContainer.classList.remove('scale-100');
+            modalContainer.classList.add('scale-95');
+        }
+
+        // Close modal if user clicks outside the modal box
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+
+</html>
